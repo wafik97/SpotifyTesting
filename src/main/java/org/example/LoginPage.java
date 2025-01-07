@@ -2,9 +2,6 @@ package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -15,7 +12,6 @@ public class LoginPage {
     private By emailFieldBy = By.id("email");
     private By passwordFieldBy = By.id("password");
     private By loginButtonBy = By.cssSelector("button[type='submit']");
-    private By successMessageBy = By.id("toast-container");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
